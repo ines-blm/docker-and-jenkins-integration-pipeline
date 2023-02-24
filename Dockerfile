@@ -3,7 +3,7 @@ FROM centos:7
 
 LABEL maintainer="Ines"
 
-RUN yum -y update 
+RUN yum -y update && yum clean all
 
 RUN yum -y install httpd
 
